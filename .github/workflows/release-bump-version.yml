@@ -1,20 +1,21 @@
 name: Release - Bump Version
 
-on:  # yamllint disable-line rule:truthy
-  schedule:
-    - cron: '0 0 1 * *'
-  workflow_dispatch:
-    inputs:
-      version_type:
-        description: "Version Type?"
-        required: true
-        type: choice
-        options:
-          - major
-          - minor
-          - patch
-        default: "minor"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:  # yamllint disable-line rule:truthy
+#   schedule:
+#     - cron: '0 0 1 * *'
+#   workflow_dispatch:
+#     inputs:
+#       version_type:
+#         description: "Version Type?"
+#         required: true
+#         type: choice
+#         options:
+#           - major
+#           - minor
+#           - patch
+#         default: "minor"
+# 
 permissions: {}
 
 jobs:

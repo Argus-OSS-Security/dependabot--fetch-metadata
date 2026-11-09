@@ -3,13 +3,14 @@ name: Check for uncommitted files
 permissions:
   contents: read
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - 'releases/*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - main
+#       - 'releases/*'
+# 
 jobs:
   # This ensures a rebuild matches the checked-in dist/ folder
   verify-build:

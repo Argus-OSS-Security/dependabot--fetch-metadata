@@ -8,10 +8,11 @@
 
 name: Release - Move Tracking Tag
 
-on:
-  release:
-    types: [published]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types: [published]
+# 
 permissions: {}
 
 jobs:
